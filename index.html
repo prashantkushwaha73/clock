@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="g.css">
+   <!-- <script src="js.js"></script> -->
+</head>
+<body>
+    <div id="cont" class="container">
+        <img src="images/pngwing.com (3).png" alt="">
+        <div id="min" class="minute"></div>
+        <div id="sec" class="second"></div>
+        <div id="hrs"></div>
+    </div>
+    
+        
+    </div>
+    
+    <script>
+       var mov=new Date().getMinutes()*6;
+       setInterval(function(){
+        var dt2 = new Date().getSeconds()*6;
+        document.getElementById("sec").style.transform = "rotate(" + dt2*1 + "deg)";
+        var hr=new Date().getHours();
+        var minu=new Date().getMinutes();
+        minu=minu+((new Date().getSeconds())/60);
+        document.getElementById("hrs").style.transform = "rotate(" + minu*6 + "deg)";
+        if(hr > 12){
+            hr=24-hr;
+        }
+        hr=hr+(minu/60);
+        document.getElementById("min").style.transform = "rotate(" + hr*30 + "deg)";
+        document.getElementById("samay").innerText = hr;
+       }, 1000)  
+       
+       
+       
+    </script>
+</body>
+</html>

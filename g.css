@@ -1,0 +1,58 @@
+div.container img{
+    width: 43vw;
+    height:80vh ;
+}
+div.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div.minute{
+    height: 120px;
+    width: 0.0001px;
+    border: 3px solid black;
+    position:relative;
+    top: -64px;
+    left: -336px;
+    transform-origin: bottom center;
+    
+  /*  animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+}
+div.second{
+    height: 200px;
+    width: 0.0001px ;
+    border: 1px solid red;
+    position: relative;
+    top: -103px;
+    left: -336px;
+    transform-origin: bottom center;
+    
+   /* animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+}
+
+div#hrs{
+  height: 180px;
+  width: 0.0001px;
+  border: 2px solid black;
+  position: relative;
+  top: -92.7px;
+  left: -342px;
+  transform-origin: bottom center;
+}
+
+@keyframes example1 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  #samay{
+    height: 300px;
+    width: 500px;
+    border: 2px solid red;
+    font-size: 100px;
+  }
